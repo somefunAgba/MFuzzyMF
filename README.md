@@ -1,5 +1,6 @@
 # MFuzzyMF
 #### M-shaped Fuzzy Membership Functions
+[![DOI](https://zenodo.org/badge/151821877.svg)](https://zenodo.org/badge/latestdoi/151821877)
 
 ###### Author: Somefun Oluwasegun
 ###### Email: oasomefun@ieee.org
