@@ -1,44 +1,20 @@
 # MFuzzyMF
-M-shaped Fuzzy Membership Functions
+###### M-shaped Fuzzy Membership Functions
 
-Author: Somefun Oluwasegun
-Email: oasomefun@ieee.org
-(c) 2018
-Dept: EEE/CPE, FUTA
+>Author: Somefun Oluwasegun
+>Email: oasomefun@ieee.org
+>(c) 2018
+> Dept: EEE/CPE, FUTA
 
-MFMF M-shaped fuzzy curve membership function.
-  MFMF(X, PARAMS, OPTION) returns a matrix which is the M-shaped
-  membership function evaluated at X. 
+M-shaped fuzzy curve membership function.
+MFMF(X, PARAMS, OPTION) returns a matrix which is the M-shaped membership function evaluated at X. 
 
-  PARAMS = PARAMS = [X0,X1,..,X4]  or [X0,X1,..,X7] 
-  is a 5-element or an 8-element vector that determines the break points 
-  of this membership function.
-  A more special case is the triggered Pulse-Membership Function
+PARAMS = PARAMS = [X0,X1,..,X4]  or [X0,X1,..,X7] is a 5-element or an 8-element vector that determines the break points 
+of this membership function. A special case of the M-shape MF is the triggered Pulse-MF
 
-  OPTION = 1, 1.2, 1.3
-  At n = 0 or 2;
-  When Xn < Xn+1, MMF is a smooth transition from 0 (at Xn) to 1 (at Xn+1).
-  else when Xn >= X(n+1),MMF becomes a step function
-  jumping from 0 to 1 at (Xn+1+Xn)/2.
-  At n = 1 or 3;
-  When Xn < X(n+1), MMF is a smooth transition from 1 (at Xn) to 0 (at Xn+1).
-  else when Xn >= X(n+1),MMF becomes a reverse-step function
+![url](mfmf_view.svg)
 
-  OPTION = 2, 2.2, 2.3
-  At n = 0 or 4;
-  When Xn < Xn+1, MMF is a smooth transition from 0 (at Xn) to 1 (at Xn+1).
-  else when Xn >= X(n+1),MMF becomes a step function
-  jumping from 0 to 1 at (Xn+1+Xn)/2.
-  At n = 2 or 6;
-  When Xn < X(n+1), MMF is a smooth transition from 1 (at Xn) to 0 (at Xn+1).
-  else when Xn >= X(n+1),MMF becomes a reverse-step function
-  jumping from 1 to 0 at (Xn+1+Xn)/2.
-  At n = 1;
-  MMF is a constant 1 (at Xn) to (at Xn+1).
-  At n = 3;
-  MMF is a constant 0 (at Xn) to (at Xn+1).
-[!url](mfmf_view.svg)
-
+```
   For example:
     x = 0:0.1:10;
     mh =figure();
@@ -145,3 +121,4 @@ MFMF M-shaped fuzzy curve membership function.
     ax65.LineWidth = 1.5;
     grid on; grid minor;
     set(mh, 'name', 'M-MF', 'numbertitle', 'off');
+```
