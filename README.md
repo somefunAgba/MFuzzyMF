@@ -1,5 +1,5 @@
 # MFuzzyMF
-###### M-shaped Fuzzy Membership Functions
+##### M-shaped Fuzzy Membership Functions
 
 ###### Author: Somefun Oluwasegun
 ###### Email: oasomefun@ieee.org
@@ -7,7 +7,7 @@
 ###### Dept: EEE/CPE, FUTA
 
 #### Usage
-MFMF(X, PARAMS, OPTION) returns a matrix which is the M-shaped membership function evaluated at X. 
+###### MFMF(X, PARAMS, OPTION) returns a matrix which is the M-shaped membership function evaluated at X. 
 
 ###### PARAMS = PARAMS = [X0,X1,..,X4]  or [X0,X1,..,X7] is a 5-element or an 8-element vector that determines the break points of this membership function. 
 ###### A special case of the M-shape MF is the triggered [Pulse-MF](https://github.com/somefunAgba/PulseMF)
