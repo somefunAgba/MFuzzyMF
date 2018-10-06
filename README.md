@@ -1,5 +1,5 @@
 # MFuzzyMF
-##### M-shaped Fuzzy Membership Functions
+#### M-shaped Fuzzy Membership Functions
 
 ###### Author: Somefun Oluwasegun
 ###### Email: oasomefun@ieee.org
