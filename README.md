@@ -2,11 +2,14 @@
 ###### M-shaped Fuzzy Membership Functions
 
 >Author: Somefun Oluwasegun
+
 >Email: oasomefun@ieee.org
+
 >(c) 2018
+
 > Dept: EEE/CPE, FUTA
 
-M-shaped fuzzy curve membership function.
+#### Usage
 MFMF(X, PARAMS, OPTION) returns a matrix which is the M-shaped membership function evaluated at X. 
 
 PARAMS = PARAMS = [X0,X1,..,X4]  or [X0,X1,..,X7] is a 5-element or an 8-element vector that determines the break points 
@@ -14,7 +17,7 @@ of this membership function. A special case of the M-shape MF is the triggered P
 
 ![url](mfmf_view.svg)
 
-```
+```Matlab
   For example:
     x = 0:0.1:10;
     mh =figure();
